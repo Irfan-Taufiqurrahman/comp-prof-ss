@@ -19,7 +19,7 @@
     <meta name="twitter:card" content="summary_large_image" /> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>PT. Samudera Suri</title>
+    <title>Ekspedisi dari Surabaya ke Papua - Samudera Suri</title>
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -34,6 +34,7 @@
     <link href="{{ asset('css/about.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Favicon  -->
     <link rel="icon" href="{{ asset('images/Logo_PT.png') }}" />

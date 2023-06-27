@@ -25,26 +25,21 @@
                     </li>
                     <li>
                         <a class="nav-link page-scroll" href="#details">
-                            Tentang Kami
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link page-scroll" href="#pricing">
-                            Pricing
+                            Produk
                         </a>
                     </li>
 
                     <li class="relative">
                         <button type="button" class="nav-link page-scroll focus:outline-none font-bold" id="dropdown-toggle">
-                            Toggle Dropdown
+                            Tracking
                         </button>
 
                         <div class="absolute right-0 w-40 mt-2 bg-white border rounded-md shadow-md p-2 hidden" id="dropdown-menu">
                             <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                                Option 1
+                                Mobil
                             </a>
                             <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                                Option 2
+                                Truk
                             </a>
                             <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">
                                 Option 3
@@ -53,25 +48,31 @@
                     </li>
 
                     <li>
-                        <a class="nav-link page-scroll" href="#download">
-                            Download
+                        <a class="nav-link page-scroll" href="#reviewer">
+                            Review
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link page-scroll" href="#footer">
+                            Kontak Kami
                         </a>
                     </li>
                 </ul>
-                {{-- <span class="block lg:ml-3.5">
+                <!-- <span class="block lg:ml-3.5">
                     <a class="no-underline" href="#your-link">
                         <i class="fab fa-apple text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200 mr-1.5"></i>
                     </a>
                     <a class="no-underline" href="#your-link">
                         <i class="fab fa-android text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200"></i>
                     </a>
-                </span> --}}
+                </span> -->
             </div>
-            {{-- end of navbar-collapse --}}
+            <!-- end of navbar-collapse -->
         </div>
-        {{-- end of container --}}
+        <!-- end of container -->
     </nav>
-    {{-- end of navbar --}}
+    <!-- end of navbar -->
 </div>
 
 <script>

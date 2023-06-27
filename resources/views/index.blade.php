@@ -21,10 +21,10 @@
                     </svg>
                     <span class="h3-large mb-5 text-white">Ekspedisi</span>
                 </span>
-                <h1 class="max-w-lg mb-6 font-sans font-bold leading-none tracking-tigh sm:text-3xl lg:text-5xl md:mx-auto text-black">Layanan Ekspedisi Terbaik</h1>
-                <p class="p-large mb-8 text-white text-justify">Menyediakan jasa pengiriman barang, jasa Ekspedisi cargo murah melalui laut, darat dan udara. Layanan pengiriman barang kami meliputi Surabaya ke seluruh wilayah Indonesia salah satunya adalah Wilayah Papua (Bintuni, Manokwari, Nabire, Bintuni, Fakfak). dengan cepat, aman dan bergaransi.</p>
-                <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
-                <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a>
+                <h1 class="max-w-lg mb-6 font-sans font-bold leading-none tracking-tigh text-3xl lg:text-5xl md:mx-auto text-black">Layanan Ekspedisi Terbaik</h1>
+                <p class="p-large mb-8 text-white text-justify sm:text-base">PT. Samudera Suri menyediakan jasa pengiriman barang, jasa Ekspedisi cargo murah melalui laut, darat dan udara. Layanan pengiriman barang kami meliputi Surabaya ke seluruh wilayah Indonesia salah satunya adalah Wilayah Papua (Bintuni, Manokwari, Nabire, Bintuni, Fakfak). dengan cepat, aman dan bergaransi.</p>
+                <!--<a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
+                <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a>-->
             </div>
             <div class="xl:text-right">
                 <img class="inline" src="images/Group 1.png" alt="alternative" />
@@ -42,15 +42,15 @@
                 <p class="mb-4 text-gray-800 sm:text-lg sm:text-black lg:text-3xl leading-10 lg:mx-auto">
                 <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-3xl lg:text-4xl md:mx-auto">
                     <span class="relative inline-block">
+
                         <span class="relative">Benefit</span>
                     </span>
-                    Yang Akan Anda Dapatkan
+                    yang Akan Anda Dapatkan
                 </h2>Saat Memilih Samudera Suri Sebagai Jasa Pengiriman Anda</p>
             </div> <!-- end of container -->
         </div>
     </div>
     <!-- end of introduction -->
-
 
     <!-- Features -->
     <div id="features" class="cards-1">
@@ -169,10 +169,10 @@
     </section>
     @include('Components.team')
 
-    <section class="bg-white">
-        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+    <section class="bg-white" id="reviewer">
+        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24">
             <h2 class="text-center text-4xl font-bold tracking-tight sm:text-5xl">
-                Read trusted reviews from our customers
+                Review yang Telah Merasakan Layanan Kami
             </h2>
 
         </div>
@@ -182,40 +182,55 @@
     @include('Asset.testimonial')
     <!-- Testimonial -->
 
-    <!-- Pelanggan Kami -->
-    <div class="" id="pelanggan-kami">
-        <div class="lg:text-4xl sm:text-xl font-bold">
-            <p>Pelanggan Kami</p>
+
+
+    <!-- Accordions -->
+    <div class="pb-14" id="pertanyaan">
+        <div class="px-3">
+            <p class="sm:text-xl font-bold text-center text-4xl text-blue-600">Pertanyaan yang Sering Ditanyakan</p>
         </div>
+    </div>
+    @include('Asset.accordions')
+    <!-- end of Accordions -->
+
+
+    <!-- Pelanggan Kami -->
+    <div class="pb-14 pt-14 text-center bg-gradient-to-b from-white via-blue-300 to-white" id="pelanggan-kami">
         <div>
-            <img src="" alt="">
+            <section class=" dark:bg-gray-900">
+                <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+                    <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">Pelanggan Kami</h2>
+                    <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
+                        <a href="https://www.toyota.com/" class="flex justify-center items-center">
+                            <img src="images/Toyota.png" alt="Toyota">
+                        </a>
+                        <a href="https://www.philips.co.id/id" class="flex justify-center items-center">
+                            <img src="images/Philips_logo.png" alt="Philips">
+                        </a>
+                        <a href="https://www.mayoraindah.co.id/" class="flex justify-center items-center">
+                            <img src="images/Logo-Mayora.png" alt="Mayora">
+                        </a>
+                        <a href="https://wingscorp.com/" class="flex justify-center items-center">
+                            <img src="images/2560px-Wings_(Indonesian_company)_logo.svg.png" alt="Wings">
+                        </a>
+                        <a href="https://www.yamaha-motor.co.id/" class="flex justify-center items-center">
+                            <img src="images/Yamaha-Logo.png" alt="Yamaha">
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <!-- end Pelanggan Kami -->
-
-
-    <!-- Conclusion -->
-    <div id="download" class="basic-5">
-        <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2">
-            <div class="mb-16 lg:mb-0">
-                <img src="images/conclusion-smartphone.png" alt="alternative" />
-            </div>
-            <div class="lg:mt-24 xl:mt-44 xl:ml-12">
-                <p class="mb-9 text-gray-800 text-3xl leading-10">Team management mobile applications don’t get much better than Pavo. Download it today</p>
-                <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Download</a>
-                <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Download</a>
-            </div>
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-5 -->
-    <!-- end of conclusion -->
-
     @include('Asset.map')
 
+    <a href="https://wa.me/+6281330943131" class="floating" target="_blank" onclick="openWhatsAppChat()">
+        <i class="fab fa-whatsapp fab-icon"></i>
+    </a>
 
     <!-- Footer -->
     @include('Asset.footer')
     <!-- end of footer -->
-
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for JavaScript plugins -->
@@ -225,7 +240,6 @@
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
-
     <script>
         var glide07 = new Glide('.glide-08', {
             type: 'slider',
@@ -238,9 +252,19 @@
                 activeNav: '[&>*]:bg-slate-700',
             },
         });
-
         glide07.mount();
     </script>
-    <!-- End Testimonial slider -->
+    <script>
+        function openWhatsAppChat() {
+            // Define your chat message
+            var message = "Halo bapak Agung, Nama saya ... saya ingin mengetahui lebih detail tentang jasa perusahaan anda..";
+
+            // Construct the WhatsApp URL with the chat message
+            var whatsappUrl = "https://wa.me/+6281330943131?text=" + encodeURIComponent(message);
+
+            // Open the WhatsApp chat window
+            window.open(whatsappUrl, "_blank");
+        }
+    </script>
 
 </body>
