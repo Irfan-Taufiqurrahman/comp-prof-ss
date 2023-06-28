@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\LoadingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +15,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+// Route::middleware(['loading'])->group(function () {
+//     Route::get('/loading', [IndexController::class, 'index'])->name('loading');
+
+//     //main page route
+//     Route::get('/', function () {
+//         return view('index');
+//     })->name('index');
+// });
+
+Route::get('/', [LoadingController::class, 'show']);
 
 Route::get('/notfound', function () {
     return view('Components/pageError');

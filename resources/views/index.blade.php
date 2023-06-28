@@ -2,6 +2,18 @@
 
 <body data-spy="scroll" data-target=".fixed-top">
 
+    <!-- Add your loading page section -->
+    <section id="loading-screen" class="loading-screen">
+        <div class="containerrr">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <span class="loading text-base">Loading...</span>
+        </div>
+    </section>
+
+    <!-- The rest of your layout content -->
+
     <!-- Navigation -->
     @include('Asset.Nav')
     <!-- end of navigation -->
@@ -195,12 +207,12 @@
 
 
     <!-- Pelanggan Kami -->
-    <div class="pb-14 pt-14 text-center bg-gradient-to-b from-white via-blue-300 to-white" id="pelanggan-kami">
+    <div class="pb-14 pt-14 text-center bg-gradient-to-b from-white via-blue-100 to-white" id="pelanggan-kami">
         <div>
-            <section class=" dark:bg-gray-900">
+            <section class="dark:bg-gray-900">
                 <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
                     <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">Pelanggan Kami</h2>
-                    <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
+                    <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400 justify-center">
                         <a href="https://www.toyota.com/" class="flex justify-center items-center">
                             <img src="images/Toyota.png" alt="Toyota">
                         </a>
@@ -221,6 +233,7 @@
             </section>
         </div>
     </div>
+
     <!-- end Pelanggan Kami -->
     @include('Asset.map')
 
@@ -265,6 +278,14 @@
             // Open the WhatsApp chat window
             window.open(whatsappUrl, "_blank");
         }
+    </script>
+
+    <script>
+        // Hide the loading screen once the page is fully loaded
+        window.addEventListener('load', function() {
+            var loadingScreen = document.getElementById('loading-screen');
+            loadingScreen.style.display = 'none';
+        });
     </script>
 
 </body>

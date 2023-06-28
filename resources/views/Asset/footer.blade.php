@@ -22,7 +22,7 @@
                 <div class="mt-8 spa  ce-y-1 text-sm text-gray-700 text-justify">
                     <i class="fa-solid fa-map-location-dot"></i>
                     <li>
-                        jl. simo jawar no.120-122 simomulyo, Kota Surabaya, Jawa Timur
+                        jl. Simo Jawar No. 120 - 122 Simomulyo, Kota Surabaya, Jawa Timur
                     </li>
                     <li>
                         jl. Imam Bonjol No. 30, RT 07, RW V, Kabupaten Biak Numfor, Provinsi Papua

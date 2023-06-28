@@ -14,7 +14,7 @@
             <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
                 <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
                     <li>
-                        <a class="nav-link page-scroll" href="#header">
+                        <a class="nav-link page-scroll" href="/">
                             Beranda <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -93,8 +93,27 @@
             dropdownMenu.classList.remove('hidden');
         });
 
+        dropdownToggle.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                if (!dropdownMenu.matches(':hover')) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            }, 300);
+        });
+
+        dropdownMenu.addEventListener('mouseenter', () => {
+            clearTimeout(dropdownMenu.dataset.timer);
+        });
+
         dropdownMenu.addEventListener('mouseleave', () => {
-            dropdownMenu.classList.add('hidden');
+            dropdownMenu.dataset.timer = setTimeout(() => {
+                dropdownMenu.classList.add('hidden');
+            }, 300);
+        });
+
+        // Toggle the dropdown menu when the "Tracking" button is clicked
+        dropdownToggle.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
         });
     });
 </script>
