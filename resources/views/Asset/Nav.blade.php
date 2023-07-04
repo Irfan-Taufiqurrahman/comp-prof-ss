@@ -3,7 +3,7 @@
     <nav class="navbar fixed-top" id="mainNav">
         <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap">
 
-            <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="index.html">
+            <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="/">
                 <img src="images/PT.png" alt="alternative" class="h-10" />
             </a>
 

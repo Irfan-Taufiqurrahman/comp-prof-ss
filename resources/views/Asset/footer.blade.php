@@ -54,19 +54,19 @@
 
                     <ul class="mt-6 space-y-4 text-sm">
                         <li>
-                            <a href="#" class="text-gray-700 transition hover:opacity-75">
+                            <a class="text-gray-700 transition">
                                 Ekspedisi via Laut
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-gray-700 transition hover:opacity-75">
+                            <a class="text-gray-700 transition ">
                                 Ekspedisi Via Darat
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" class="text-gray-700 transition hover:opacity-75">
+                            <a class="text-gray-700 transition">
                                 Ekspedisi Via Udara
                             </a>
                         </li>
@@ -79,7 +79,7 @@
 
                     <ul class="mt-6 space-y-4 text-sm">
                         <li>
-                            <a href="#" class="text-gray-700 transition hover:opacity-75">
+                            <a class="text-gray-700 transition">
                                 PT. Samudera Suri Surabaya
                             </a>
                         </li>

@@ -1,8 +1,12 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoadingController;
+use App\Http\Controllers\ProductController;
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,16 +23,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('index');
 // });
 
-// Route::middleware(['loading'])->group(function () {
-//     Route::get('/loading', [IndexController::class, 'index'])->name('loading');
-
-//     //main page route
-//     Route::get('/', function () {
-//         return view('index');
-//     })->name('index');
-// });
-
 Route::get('/', [LoadingController::class, 'show']);
+Route::get('/blog', [BlogController::class, 'show']);
+Route::get('/product', [ProductController::class, 'index'])->name('Dashboard.product.product');
+Route::get('/product/store', [ProductController::class, 'create'])->name('Dashboard.product.create');
+Route::delete('/product/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
+Route::post('/product', [ProductController::class, 'store'])->name('Dashboard.product.store');
+
 
 Route::get('/notfound', function () {
     return view('Components/pageError');

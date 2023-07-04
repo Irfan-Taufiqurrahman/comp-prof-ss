@@ -8,7 +8,7 @@
             <div class="ring"></div>
             <div class="ring"></div>
             <div class="ring"></div>
-            <span class="loading text-base">Loading...</span>
+            <span class="loading">Loading...</span>
         </div>
     </section>
 
@@ -54,7 +54,6 @@
                 <p class="mb-4 text-gray-800 sm:text-lg sm:text-black lg:text-3xl leading-10 lg:mx-auto">
                 <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-3xl lg:text-4xl md:mx-auto">
                     <span class="relative inline-block">
-
                         <span class="relative">Benefit</span>
                     </span>
                     yang Akan Anda Dapatkan
@@ -87,7 +86,7 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title font-bold">Real Time Tracking</h5>
-                    <p class="mb-4">nda Tidak Perlu Khawatir, jasa pengiriman kami mempunyai fitur real time tracking untuk mempermudah customer mengetahui posisi barang yang dikirim</p>
+                    <p class="mb-4">Anda Tidak Perlu Khawatir, jasa pengiriman kami mempunyai fitur real time tracking untuk mempermudah customer mengetahui posisi barang yang dikirim</p>
                 </div>
             </div>
             <!-- end of card -->
@@ -143,7 +142,6 @@
         </div> <!-- end of container -->
     </div> <!-- end of cards-1 -->
     <!-- end of features -->
-
 
 
     <!-- Statistics -->
@@ -287,5 +285,6 @@
             loadingScreen.style.display = 'none';
         });
     </script>
+
 
 </body>
