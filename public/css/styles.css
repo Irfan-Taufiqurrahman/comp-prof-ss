@@ -1126,7 +1126,37 @@ a:hover.back-to-top {
     .fab-icon {
         margin-top: 16px;
     }
-
     /* end of extra pages */
 }
 /* end of min-width 1200px */
+/* 
+/* Add CSS to style the cards horizontally and increase the image size */
+.card-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    height: 100%;
+}
+
+.card {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hide scrollbar */
+.card-slider::-webkit-scrollbar {
+    display: none;
+}

@@ -10,9 +10,4 @@ class BlogController extends Controller
     {
         return view('/Dashboard/blog');
     }
-
-    public function tables()
-    {
-        return view('/Dashboard/product');
-    }
 }

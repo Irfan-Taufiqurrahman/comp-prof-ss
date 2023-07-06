@@ -66,7 +66,6 @@
     <!-- Features -->
     <div id="features" class="cards-1">
         <div class="container px-4 sm:px-8 xl:px-4">
-
             <!-- Card -->
             <div class="card">
                 <div class="card-image">
@@ -147,36 +146,31 @@
     <!-- Statistics -->
     <section class="statistic w-full h-screen bg-no-repeat bg-cover bg-fixed" style="background-image: url('images/container.jpg');">
         <div class="counter">
-            <div class="container px-4 sm:px-8 bg-white opacity-75">
-                <!-- Counter -->
-                <div id="counter">
-                    <div class="cell">
-                        <div class="counter-value number-count" data-count="231">1</div>
-                        <p class="counter-info">Happy Users</p>
+            <div class="text-center text-4xl font-bold tracking-tight sm:text-5xl text-white pb-5">
+                About Us
+            </div>
+            <div class="container px-4 sm:px-8 bg-white">
+                <div class="card-container">
+                    <div class="card-slider">
+                        @foreach($products as $item)
+                        <!-- Card -->
+                        <div class="card p-4">
+                            <div class="card-image">
+                                <img src="{{ asset('fotoProduct/'. $item->content) }}" alt="" style="width: 400px; height: auto;">
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center text-lg tracking-tight sm:text-lg pt-4">{{ $item->title_content }}</p>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+                        @endforeach
                     </div>
-                    <div class="cell">
-                        <div class="counter-value number-count" data-count="385">1</div>
-                        <p class="counter-info">Issues Solved</p>
-                    </div>
-                    <div class="cell">
-                        <div class="counter-value number-count" data-count="159">1</div>
-                        <p class="counter-info">Good Reviews</p>
-                    </div>
-                    <div class="cell">
-                        <div class="counter-value number-count" data-count="127">1</div>
-                        <p class="counter-info">Case Studies</p>
-                    </div>
-                    <div class="cell">
-                        <div class="counter-value number-count" data-count="211">1</div>
-                        <p class="counter-info">Orders Received</p>
-                    </div>
-                </div>
-                <!-- end of counter -->
-
-            </div> <!-- end of container -->
-        </div> <!-- end of counter -->
+                </div> <!-- end of container -->
+            </div> <!-- end of counter -->
+        </div>
         <!-- end of statistics -->
     </section>
+
     @include('Components.team')
 
     <section class="bg-white" id="reviewer">
@@ -191,8 +185,6 @@
     <!-- Testimonial -->
     @include('Asset.testimonial')
     <!-- Testimonial -->
-
-
 
     <!-- Accordions -->
     <div class="pb-14" id="pertanyaan">
@@ -210,7 +202,7 @@
             <section class="dark:bg-gray-900">
                 <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
                     <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">Pelanggan Kami</h2>
-                    <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400 justify-center">
+                    <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-5 dark:text-gray-400 justify-center">
                         <a href="https://www.toyota.com/" class="flex justify-center items-center">
                             <img src="images/Toyota.png" alt="Toyota">
                         </a>
